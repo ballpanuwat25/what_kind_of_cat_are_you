@@ -1,0 +1,134 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:wght@300;400;500;600&family=Noto+Sans+Thai:wght@100..900&display=swap'); */
+@font-face {
+    font-family: "FC Palette";
+    src: url('fonts/FC Palette.ttf') format('truetype'),
+}
+
+:root {
+    --primary-color: #dca35e;
+    --secondary-color: #fff6eb;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #955202;
+}
+
+/* #955202 */
+
+* {
+    font-family: 'FC Palette', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #dca35e;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    font-size: 32px;
+    color: var(--primary-text-color);
+    text-shadow: 8px 8px 0 var(--secondary-text-color);
+}
+
+.sub_title {
+    font-size: 24px;
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 0 var(--secondary-text-color);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cloud_rows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cloud {
+    background-image: url('images/cloud.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-size: 300%;
+
+    margin-top: -60px;
+    margin-left: -140px;
+
+    animation: moveUpDown 1s infinite alternate ease-in-out;
+}
+
+.cloud:nth-child(2) {
+    margin-top: -40px;
+    margin-right: -120px;
+
+    animation: moveDownUp 1s infinite alternate ease-in-out;
+}
+
+.footer_img {
+    background-image: url('images/cat_cloud_1.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: left -420px bottom -150px;
+    background-size: 300%;
+
+    margin-top: 60px;
+    margin-left: -50px;
+}
+
+.footer_img:nth-child(2) {
+    background-image: url('images/cat_cloud_3.png');
+    background-position: center;
+}
+
+.footer_img:nth-child(3) {
+    background-image: url('images/cat_cloud_2.png');
+    background-size: 300%;
+    background-position: right -420px bottom -120px;
+
+    margin-top: 30px;
+    margin-right: -50px;
+}
+
+.cta_btn {
+    background-color: var(--secondary-color);
+    font-size: 24px;
+    color: var(--secondary-text-color);
+
+    margin-top: 16px;
+    padding: 8px 16px 0 16px;
+
+    border: none;
+    cursor: pointer;
+
+    border-radius: 16px;
+
+    transition: all 0.3s;
+}
+
+.cta_btn:hover {
+    font-size: 26px;
+}
+
+@keyframes moveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); } /* ขยับขึ้น 20px */
+}
+@keyframes moveDownUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); } /* ขยับลง 20px */
+}
