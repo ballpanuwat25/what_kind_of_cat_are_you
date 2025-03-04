@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "FC Palette";
+    src: url('../fonts/FC Palette.ttf') format('truetype'),
+}
+
+:root {
+    --primary-color: #dca35e;
+    --secondary-color: #fff6eb;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #955202;
+}
+
+* {
+    font-family: 'FC Palette', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--secondary-color) 70%, var(--primary-color) 30%);
+}
