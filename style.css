@@ -137,6 +137,27 @@ body {
     font-size: 26px;
 }
 
+.submit_btn {
+    background-color: var(--secondary-color);
+    font-size: 24px;
+    color: var(--secondary-text-color);
+
+    margin-top: 16px;
+    padding: 8px 16px 0 16px;
+
+    border: none;
+    cursor: pointer;
+
+    border-radius: 16px;
+
+    transition: all 0.2s;
+}
+
+.submit_btn:hover {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+}
+
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); } /* ขยับขึ้น 20px */
@@ -160,11 +181,30 @@ body {
 .modal-content {
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 16px;
+    width: 500px;
     margin: 15% auto;
     text-align: center;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_text {
+    font-size: 48px;
+    color: var(--secondary-text-color);
+}
+
+.modal_input {
+    font-size: 24px;
+    padding: 8px;
+    margin: 16px 0;
+    border: 2px dashed var(--secondary-text-color);
+    border-radius: 8px;
+    outline: none;
+
+    color: var(--secondary-text-color);
 }
 
 .close {

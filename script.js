@@ -1,7 +1,18 @@
 $(document).ready(function() {
-    // $('#start').click(function() {
-    //     // window.location.href = './pages/question.html';
-    // });
+    $('#submit').click(function() {
+        let name = $('#name').val();
+        if(!name) {
+            alert('ใส่ชื่อก่อนน้า 😘');
+            return;
+        }
+
+        if(name != "น้องบอลรักพี่ไอซ์") {
+            window.location.href = './pages/question.html';
+        }
+
+        $('#name').val('');
+        // window.location.href = './pages/secret.html';
+    });
 
     $("#start").click(function() {
         $("#myModal").fadeIn();
