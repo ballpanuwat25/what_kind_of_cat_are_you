@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "FC Palette";
+    src: url('../fonts/FC Palette.ttf') format('truetype'),
+}
+
+:root {
+    --primary-color: #dca35e;
+    --secondary-color: #fff6eb;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #955202;
+}
+
+* {
+    font-family: 'FC Palette', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: var(--secondary-color);
+
+    height: 100vh;
+}
+
+.cloud_bg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+
+    z-index: -1;
+}
+
+.cloud {
+    background-image: url('../images/cloud.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-size: 300%;
+
+    margin-top: -60px;
+    margin-left: -140px;
+}
+
+.cloud:nth-child(2) {
+    margin-top: -40px;
+    margin-right: -120px;
+}
+
+.cat_footer {
+    background-image: url('../images/cat_nap.png');
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+    position: fixed;
+    top: 87%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    z-index: -1;
+}
+
+.result_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    gap: 16px;
+}
+
+.result_box {
+    width: 500px;
+    border: 2px dashed var(--secondary-text-color);
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.result_title {
+    font-size: 48px;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+
+    letter-spacing: 2px;
+}
+
+.result_desc {
+    font-size: 20px;
+    color: #c3873f;
+    text-align: center;
+}
+
+.suggest_box {
+    background-color: var(--secondary-color);
+    font-size: 24px;
+    color: var(--secondary-text-color);
+    margin-top: 16px;
+    padding: 8px 16px 0 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.2s;
+
+    width: 100%;
+}
+
+.suggest_box:hover {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+}
