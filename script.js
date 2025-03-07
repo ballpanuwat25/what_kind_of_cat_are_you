@@ -23,10 +23,18 @@ $(document).ready(function() {
         $("#myModal").fadeOut();
     });
 
+    $("#suggest").click(function() {
+        $("#myModal2").fadeIn();
+    });
+
     // ปิด Modal เมื่อคลิกข้างนอก
     $(window).click(function(event) {
         if ($(event.target).is("#myModal")) {
             $("#myModal").fadeOut();
+        }
+        
+        if ($(event.target).is("#myModal2")) {
+            $("#myModal2").fadeOut();
         }
     });
 });
