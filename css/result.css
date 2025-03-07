@@ -77,7 +77,7 @@ body {
 }
 
 .result_box {
-    width: 500px;
+    width: 600px;
     border: 2px dashed var(--secondary-text-color);
     padding: 20px;
     border-radius: 16px;
