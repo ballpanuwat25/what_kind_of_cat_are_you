@@ -268,3 +268,10 @@ body {
         font-size: 24px;    
     }
 }
+
+@media screen and (max-height: 800px) {
+    .cloud_rows:nth-child(3) {
+        top: 340px;
+    }
+
+}
